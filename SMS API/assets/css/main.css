@@ -1,0 +1,259 @@
+html{
+  background-color: #F4F5F8; 
+}
+
+
+/* Fixed sidenav, full height */
+.sidenav {
+    height: 100vh;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white !important;
+    overflow-x: hidden;
+    padding: 7px;
+
+}
+/*manage text*/
+.manage {
+  color: #38A956;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #3c3737;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.sidenav, .dropdown-btn {
+    font-size: 20px;
+    color: #818181;
+    background: inherit;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+    color: black;
+}
+/* Dropdown container (hidden by default). */
+.dropdown-container {
+    display: none;
+    background-color: #fff;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 2px;
+}
+
+
+/* Add an active class to the active dropdown button */
+.sidenav .active {
+    background-color: #38A956;
+    color: white;
+    font-weight: bold;
+}
+.activee {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.activee:hover {
+    font-weight: bold;
+
+}
+/* Main content */
+.main {
+    margin-left: 150px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    margin-right: 0;
+}
+
+.user-img{
+  width: 40px;
+}
+.space{
+  margin-top: 20px;
+  background-color: inherit!important;
+}
+.margin-div{
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.margin-div span{
+  color: #38A956;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*SMS TEXT#######################*/
+.sms-text{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Montserrat, sans-serif;;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: #FD9827;
+
+}
+
+
+/*NAVS###############*/
+.nav-tabs span{
+    margin-right: 7px;
+}
+nav .active{
+  color:black;
+  font-weight: bold;
+}
+
+.nav-link{
+  color:gray;
+  font-family: 'Montserrat', sans-serif;
+}
+.nav-link:hover {
+  color: black;
+}
+/*#########form#############*/
+.account-set{
+   margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+}
+.account{
+  font-family: Montserrat, sans-serif;;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FB1C27;
+}
+.form-style{
+  font-family: Montserrat, sans-serif;;
+}
+.btn-save{
+  background-color: #FD9827;
+  padding: 10px;
+  color: white;
+
+}
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100vh;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.dropbtn h2 {
+    color: #38a956;
+}
+
+.sidenav ul li {
+    list-style: none;
+    padding: 10px 0;
+    
+}
+
+.sidenav ul ul {
+    display: none;
+}
+
+.sidenav ul li:hover > ul {
+    display: block;
+}
+
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: #38A956;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #242424;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #242424;
+}
+
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  /*font-size: 28px;  Increased text to enable scrolling 
+  padding: 0px 10px;*/
+}
+
+/*@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}*/*/
